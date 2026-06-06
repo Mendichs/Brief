@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Hut direkt auf dem Kopf -->
+  <rect x="195" y="32" width="42" height="8" rx="1" fill="#222"/>
+  <rect x="205" y="10" width="22" height="24" fill="#222"/>
+
+  <!-- Körper -->
+  <ellipse cx="120" cy="105" rx="70" ry="45" fill="#e3e3e3"/>
+
+  <!-- Flügel -->
+  <ellipse cx="90" cy="95" rx="55" ry="30" fill="#cfcfcf"/>
+
+  <!-- Kopf -->
+  <circle cx="220" cy="78" r="26" fill="#e3e3e3"/>
+
+  <!-- Auge -->
+  <circle cx="228" cy="72" r="3"/>
+
+  <!-- Schnabel -->
+  <polygon points="242,80 272,88 242,96" fill="#dca14b"/>
+</svg>

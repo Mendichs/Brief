@@ -1,0 +1,17 @@
+
+body{margin:0;height:100vh;overflow:hidden;background:radial-gradient(circle at top,#4d3958,#17131f);font-family:Georgia,serif}
+#intro{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#f5e8c7;z-index:10}
+button{padding:14px 28px;border-radius:999px;border:none;background:#8b2332;color:#fff;cursor:pointer}
+.star{position:absolute;color:white;animation:twinkle 3s infinite alternate}
+@keyframes twinkle{from{opacity:.2}to{opacity:1}}
+.petal{position:absolute;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(120vh) rotate(360deg)}}
+#pigeon{position:absolute;width:260px;left:-300px;top:40%}
+.fly{animation:fly 10s forwards ease-in-out}
+@keyframes fly{0%{left:-300px;top:55%}20%{left:10%;top:25%}50%{left:40%;top:18%}80%{left:60%;top:24%}100%{left:48%;top:30%}}
+#envelope{position:absolute;left:50%;top:62%;transform:translate(-50%,-50%) scale(0);width:300px;height:190px;background:#e6d1a8;border-radius:8px}
+#envelope.show{animation:drop 1.2s forwards}
+@keyframes drop{from{transform:translate(-50%,-250%) scale(.5)}to{transform:translate(-50%,-50%) scale(1)}}
+.seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;background:#8b2332;color:#fff;display:flex;align-items:center;justify-content:center}
+#letter{position:absolute;left:50%;top:55%;transform:translateX(-50%);width:min(800px,92vw);height:0;overflow:hidden;background:#f2e3bf;transition:height 1.8s}
+#letter.open{height:430px}.paper{padding:40px;color:#2d2216}#typed{white-space:pre-wrap;line-height:1.8}
